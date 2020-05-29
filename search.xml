@@ -3,9 +3,9 @@
   <entry>
     <title><![CDATA[cap]]></title>
     <url>%2F2020%2F05%2F29%2Fcap.html</url>
-    <content type="text"><![CDATA[sds da]]></content>
+    <content type="text"><![CDATA[123456789G:\&gt;debug-aMOV SP,2000MOV AX,3000MOV BX,5000PUSH AXPUSH BXPOP AXPOP BX]]></content>
       <tags>
-        <tag>hex</tag>
+        <tag>汇编语言</tag>
       </tags>
   </entry>
   <entry>
