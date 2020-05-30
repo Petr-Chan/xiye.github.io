@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[cap]]></title>
-    <url>%2F2020%2F05%2F29%2Fcap.html</url>
-    <content type="text"><![CDATA[123456789G:\&gt;debug-aMOV SP,2000MOV AX,3000MOV BX,5000PUSH AXPUSH BXPOP AXPOP BX]]></content>
+    <title><![CDATA[conda基本操作]]></title>
+    <url>%2F2020%2F05%2F29%2Fconda%E6%93%8D%E4%BD%9C.html</url>
+    <content type="text"><![CDATA[window环境下1.conda查包1conda list 2.conda配置情况查询1conda info 3.conda换源123conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/conda config --set show_channel_urls yes 4.conda换回默认源1conda config --remove-key channels 5.conda虚拟环境创建1conda create -n your_env_name python=X.X 6.conda虚拟环境激活1activate your_env_name(虚拟环境名称) 7.conda查询环境信息1conda env list 8.conda关闭虚拟环境1deactivate 9.conda删除虚拟环境1conda remove -n your_env_name(虚拟环境名称) --all 10.conda删除虚拟环境中的某些包1conda remove --name your_env_name package_name Linux环境下如果与windows环境下操作方式相同的，则以下不再赘述。 1.conda虚拟环境激活1source activate your_env_name(虚拟环境名称) 2.conda关闭虚拟环境1source deactivate 3.conda换源在终端输入： 1vim ~/.condarc 这样就进入了conda源的配置文件了。下面（选择其一就好）将文件改为： 清华源： 123456channels: - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/ - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/ - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/ssl_verify: true 中科大源： 12345channels: - https://mirrors.ustc.edu.cn/anaconda/pkgs/main/ - https://mirrors.ustc.edu.cn/anaconda/pkgs/free/ - https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/ssl_verify: true 上交源： 12345channels: - https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/main/ - https://mirrors.sjtug.sjtu.edu.cn/anaconda/pkgs/free/ - https://mirrors.sjtug.sjtu.edu.cn/anaconda/cloud/conda-forge/ssl_verify: true 参考文献：]]></content>
       <tags>
-        <tag>汇编语言</tag>
+        <tag>conda命令行</tag>
       </tags>
   </entry>
   <entry>
