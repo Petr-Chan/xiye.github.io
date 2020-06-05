@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[TensorBoard实战]]></title>
+    <url>%2F2020%2F06%2F05%2FTensorBoard%E5%AE%9E%E6%88%98.html</url>
+    <content type="text"><![CDATA[今天我们来介绍一款机器学习中很实用的工具：TensorBoard。它之所以实用，主要是因为它将机器学习这一个类似黑盒的东西可视化出来，让用户对训练过程有一个更好的理解。下面就基于MNIST数据集来实战一下TensorBoard的使用方法。 TensorBoard可视化MNIST分类代码1234567891011121314151617181920212223242526272829303132333435363738import numpy as npfrom keras.layers import Input, Dense, Dropout, Activation, Conv2D, MaxPool2D, Flattenfrom keras.datasets import mnistfrom keras.models import Modelfrom keras.utils import to_categoricalfrom keras.callbacks import TensorBoardif __name__ == '__main__': #数据集处理 data = np.load('mnist.npz') x_train, y_train = data['x_train'], data['y_train'] x_test, y_test = data['x_test'], data['y_test'] x_train = np.expand_dims(x_train, axis=-1) x_test = np.expand_dims(x_test, axis=-1) y_train=to_categorical(y_train, num_classes=10) y_test=to_categorical(y_test, num_classes=10) #参数配置 batch_size =128 epoch = 10 # 模型搭建 inputs = Input([28, 28, 1]) x = Conv2D(32, (5, 5), activation='relu' )(inputs) x = Conv2D(64, (5, 5), activation='relu')(x) x = MaxPool2D(pool_size=(2, 2))(x) x = Flatten()(x) x = Dense(128, activation='relu')(x) x = Dropout(0.5)(x) x = Dense(10, activation='softmax')(x) model = Model(inputs, x) #模型编译 model.compile(loss='categorical_crossentropy', optimizer='adam',metrics=['acc']) #面板配置 Tensorboard = TensorBoard(log_dir='.\model', histogram_freq=1, write_grads=True) #log_dir保存目录 #模型训练 result = model.fit(x_train, y_train, batch_size=batch_size, epochs=epoch, shuffle=True, validation_split=0.2,callbacks=[Tensorboard]) #在回调函数中加入TensorBoard！ TensorBoard启动实际上，训练信息已经保存在TensorBoard配置的目录中了。下面进入当前*.py目录下的PowerShell，敲入 1tensorboard --logdir= XXX（前文中的model） PowerShell会反馈一个本地6006端口开放的提示信息。此时打开浏览器输入 1http://localhost:6006 这样就成功进入TensorBoard界面啦！ TensorBoard配置我们上述实战例子中，我们只能够看到Loss和Acc的训练曲线，而其他信息是没有保存下来的。但世界上TensorBoard的可视化功能非常强大，目前可以支持一下7种可视化类别： SCALARS：展示训练过程中的准确率、损失值、权重/偏置的变化情况 IMAGES：展示训练过程中及记录的图像 AUDIO：展示训练过程中记录的音频 GRAPHS：展示模型的数据流图，以及各个设备上消耗的内存和时间 DISTRIBUTIONS：展示训练过程中记录的数据的分布图 HISTOGRAMS：展示训练过程中记录的数据的柱状图 EMBEDDINGS：展示词向量后的投影分布 具体的参数配置后续再加~ 参考文献： https://blog.csdn.net/fendouaini/article/details/80368770?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase https://blog.csdn.net/u010099080/article/details/77426577 https://blog.csdn.net/hnwolfs/article/details/81122380?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-1]]></content>
+      <categories>
+        <category>Keras</category>
+      </categories>
+      <tags>
+        <tag>Tensorboard</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[screen教程]]></title>
     <url>%2F2020%2F06%2F05%2Fscreen%E6%95%99%E7%A8%8B.html</url>
     <content type="text"><![CDATA[​ 想必在Linux云服务器上跑过代码的同学都会有这样子的苦恼：我们通过SSH访问云服务器，将我们需要执行的代码在服务器上运行，但当你断开SSH连接后，你的代码也会随之停止运行。此时你可能开始寻找一种即使SSH离线也能让服务器运行目标代码的方法。这种方法确实存在，那就是下面提到的：screen（窗口）。这个东西实际上可以这样理解：我们通过SSH连接服务器，这时相当于开了一个主窗口。而我们关闭SSH连接后，这个主窗口也就关闭了，所以运行于主窗口的代码也就这样挂掉了。而通过screen操作相当于通过主窗口创建子窗口，主窗口湮灭了但子窗口还是存在的，所以将我们的目标代码放在子窗口运行便能够解决我们上述提到的无法离线运行的问题。 下面就介绍几种screen最常见的操作： screen创建1screen -S ###（窗口名） screen列表查看1screen -ls screen恢复1screen -r ###（窗口名） screen删除1screen -S ###(窗口名) -X quit screen恢复异常12screen -d ###（窗口名）screen -r ###（窗口名） screen返回主窗口1Ctrl + A + D]]></content>
