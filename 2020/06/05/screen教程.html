@@ -146,16 +146,18 @@
 
 
 
-  <meta name="description" content="喜欢风、喜欢云、喜欢慵懒的午后和你">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Xiye小站">
-<meta property="og:url" content="https://blog.eatgrape.top/tags/conda命令行/index.html">
+  <meta name="description" content="​    想必在Linux云服务器上跑过代码的同学都会有这样子的苦恼：我们通过SSH访问云服务器，将我们需要执行的代码在服务器上运行，但当你断开SSH连接后，你的代码也会随之停止运行。此时你可能开始寻找一种即使SSH离线也能让服务器运行目标代码的方法。这种方法确实存在，那就是下面提到的：screen（窗口）。这个东西实际上可以这样理解：我们通过SSH连接服务器，这时相当于开了一个主窗口。而我们关闭">
+<meta name="keywords" content="screen">
+<meta property="og:type" content="article">
+<meta property="og:title" content="screen教程">
+<meta property="og:url" content="https://blog.eatgrape.top/2020/06/05/screen教程.html">
 <meta property="og:site_name" content="Xiye小站">
-<meta property="og:description" content="喜欢风、喜欢云、喜欢慵懒的午后和你">
+<meta property="og:description" content="​    想必在Linux云服务器上跑过代码的同学都会有这样子的苦恼：我们通过SSH访问云服务器，将我们需要执行的代码在服务器上运行，但当你断开SSH连接后，你的代码也会随之停止运行。此时你可能开始寻找一种即使SSH离线也能让服务器运行目标代码的方法。这种方法确实存在，那就是下面提到的：screen（窗口）。这个东西实际上可以这样理解：我们通过SSH连接服务器，这时相当于开了一个主窗口。而我们关闭">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-06-05T07:34:32.237Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xiye小站">
-<meta name="twitter:description" content="喜欢风、喜欢云、喜欢慵懒的午后和你">
+<meta name="twitter:title" content="screen教程">
+<meta name="twitter:description" content="​    想必在Linux云服务器上跑过代码的同学都会有这样子的苦恼：我们通过SSH访问云服务器，将我们需要执行的代码在服务器上运行，但当你断开SSH连接后，你的代码也会随之停止运行。此时你可能开始寻找一种即使SSH离线也能让服务器运行目标代码的方法。这种方法确实存在，那就是下面提到的：screen（窗口）。这个东西实际上可以这样理解：我们通过SSH连接服务器，这时相当于开了一个主窗口。而我们关闭">
 
 
 
@@ -165,7 +167,7 @@
 
   
   
-  <link rel="canonical" href="https://blog.eatgrape.top/tags/conda命令行/">
+  <link rel="canonical" href="https://blog.eatgrape.top/2020/06/05/screen教程">
 
 
 
@@ -175,7 +177,7 @@
   };
 </script>
 
-  <title>标签: conda命令行 | Xiye小站</title>
+  <title>screen教程 | Xiye小站</title>
   
 
 
@@ -223,7 +225,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -278,7 +280,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -376,31 +378,6 @@
   
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
   
 
   
@@ -446,57 +423,305 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>conda命令行<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.eatgrape.top/2020/06/05/screen教程.html">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="丨Xiye丨">
+      <meta itemprop="description" content="喜欢风、喜欢云、喜欢慵懒的午后和你">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xiye小站">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2020/05/29/conda操作.html" itemprop="url">
-            
-              <span itemprop="name">conda基本操作</span>
-            
-          </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">screen教程
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-05-29T11:41:44+08:00" content="2020-05-29">
-          05-29
-        </time>
-      </div>
+              
+            
+          </h1>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+          <span class="post-time">
 
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-06-05 15:16:20 / 修改时间：15:34:32" itemprop="dateCreated datePublished" datetime="2020-06-05T15:16:20+08:00">2020-06-05</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">520</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>​    想必在Linux云服务器上跑过代码的同学都会有这样子的苦恼：我们通过SSH访问云服务器，将我们需要执行的代码在服务器上运行，但当你断开SSH连接后，你的代码也会随之停止运行。此时你可能开始寻找一种即使SSH离线也能让服务器运行目标代码的方法。这种方法确实存在，那就是下面提到的：screen（窗口）。这个东西实际上可以这样理解：我们通过SSH连接服务器，这时相当于开了一个主窗口。而我们关闭SSH连接后，这个主窗口也就关闭了，所以运行于主窗口的代码也就这样挂掉了。而通过screen操作相当于通过主窗口创建子窗口，主窗口湮灭了但子窗口还是存在的，所以将我们的目标代码放在子窗口运行便能够解决我们上述提到的无法离线运行的问题。</p>
+<p>下面就介绍几种screen最常见的操作：</p>
+<h2 id="screen创建"><a href="#screen创建" class="headerlink" title="screen创建"></a>screen创建</h2><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -S ###（窗口名）</span><br></pre></td></tr></table></figure>
+<h2 id="screen列表查看"><a href="#screen列表查看" class="headerlink" title="screen列表查看"></a>screen列表查看</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">screen -ls</span></span><br></pre></td></tr></table></figure>
+<h2 id="screen恢复"><a href="#screen恢复" class="headerlink" title="screen恢复"></a>screen恢复</h2><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -r ###（窗口名）</span><br></pre></td></tr></table></figure>
+<h2 id="screen删除"><a href="#screen删除" class="headerlink" title="screen删除"></a>screen删除</h2><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -S ###(窗口名) -X quit</span><br></pre></td></tr></table></figure>
+<h2 id="screen恢复异常"><a href="#screen恢复异常" class="headerlink" title="screen恢复异常"></a>screen恢复异常</h2><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">screen -d ###（窗口名）</span><br><span class="line">screen -r ###（窗口名）</span><br></pre></td></tr></table></figure>
+<h2 id="screen返回主窗口"><a href="#screen返回主窗口" class="headerlink" title="screen返回主窗口"></a>screen返回主窗口</h2><figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ctrl + <span class="keyword">A</span> + D</span><br></pre></td></tr></table></figure>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>Thank you for your accept. mua！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/reward/wechatpay.png" alt="丨Xiye丨 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/reward/alipay.png" alt="丨Xiye丨 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>丨Xiye丨</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="https://blog.eatgrape.top/2020/06/05/screen教程.html" title="screen教程">https://blog.eatgrape.top/2020/06/05/screen教程.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:16px;">-------------本文结束<i class="fa fa-heart"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/screen/" rel="tag"><i class="fa fa-tag"></i> screen</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/06/01/JAVA常规操作.html" rel="next" title="JAVA常规练习">
+                <i class="fa fa-chevron-left"></i> JAVA常规练习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NDM5Mi8yMDkyNA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -516,8 +741,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -691,6 +925,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#screen创建"><span class="nav-number">1.</span> <span class="nav-text">screen创建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#screen列表查看"><span class="nav-number">2.</span> <span class="nav-text">screen列表查看</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#screen恢复"><span class="nav-number">3.</span> <span class="nav-text">screen恢复</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#screen删除"><span class="nav-number">4.</span> <span class="nav-text">screen删除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#screen恢复异常"><span class="nav-number">5.</span> <span class="nav-text">screen恢复异常</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#screen返回主窗口"><span class="nav-number">6.</span> <span class="nav-text">screen返回主窗口</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -893,6 +1144,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
 
   
 
@@ -917,6 +1172,23 @@
 
   
 
+
+  
+    <script>
+  window.livereOptions = {
+    refer: '2020/06/05/screen教程.html'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+  
 
 
   
@@ -1270,7 +1542,7 @@
   <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
   <script>
   
-    bookmark.loadBookmark();
+    bookmark.scrollToMark('auto', "#更多");
   
   </script>
 
