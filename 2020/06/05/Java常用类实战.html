@@ -146,16 +146,18 @@
 
 
 
-  <meta name="description" content="喜欢风、喜欢云、喜欢慵懒的午后和你">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Xiyeの杂货铺">
-<meta property="og:url" content="https://blog.eatgrape.top/index.html">
+  <meta name="description" content="ArrayList类题：假设52张扑克牌（去掉大小王），实现随机洗牌操作，为参加游戏的人每人生成一手牌，每手牌的牌数是指定的，并将每个人分到的牌按花色排序后输出。 1234567891011121314151617181920212223242526272829303132import java.util.*;public class TestDealCard &amp;#123;	public stat">
+<meta name="keywords" content="Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java常用类实战">
+<meta property="og:url" content="https://blog.eatgrape.top/2020/06/05/Java常用类实战.html">
 <meta property="og:site_name" content="Xiyeの杂货铺">
-<meta property="og:description" content="喜欢风、喜欢云、喜欢慵懒的午后和你">
+<meta property="og:description" content="ArrayList类题：假设52张扑克牌（去掉大小王），实现随机洗牌操作，为参加游戏的人每人生成一手牌，每手牌的牌数是指定的，并将每个人分到的牌按花色排序后输出。 1234567891011121314151617181920212223242526272829303132import java.util.*;public class TestDealCard &amp;#123;	public stat">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-06-05T14:47:20.979Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xiyeの杂货铺">
-<meta name="twitter:description" content="喜欢风、喜欢云、喜欢慵懒的午后和你">
+<meta name="twitter:title" content="Java常用类实战">
+<meta name="twitter:description" content="ArrayList类题：假设52张扑克牌（去掉大小王），实现随机洗牌操作，为参加游戏的人每人生成一手牌，每手牌的牌数是指定的，并将每个人分到的牌按花色排序后输出。 1234567891011121314151617181920212223242526272829303132import java.util.*;public class TestDealCard &amp;#123;	public stat">
 
 
 
@@ -165,7 +167,7 @@
 
   
   
-  <link rel="canonical" href="https://blog.eatgrape.top/">
+  <link rel="canonical" href="https://blog.eatgrape.top/2020/06/05/Java常用类实战">
 
 
 
@@ -175,7 +177,7 @@
   };
 </script>
 
-  <title>Xiyeの杂货铺</title>
+  <title>Java常用类实战 | Xiyeの杂货铺</title>
   
 
 
@@ -223,8 +225,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -262,7 +263,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -421,9 +422,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -455,10 +456,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2020/06/05/Java常用类实战.html" class="post-title-link" itemprop="url">Java常用类实战</a>
+          <h1 class="post-title" itemprop="name headline">Java常用类实战
+
               
             
           </h1>
@@ -522,6 +521,13 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
           
             <div class="post-symbolscount">
@@ -568,23 +574,20 @@
       
 
       
-        
-          
-            <p>
-              ArrayList类题：假设52张扑克牌（去掉大小王），实现随机洗牌操作，为参加游戏的人每人生成一手牌，每手牌的牌数是指定的，并将每个人分到的牌按花色排序后输出。
-import java.util.*;public class TestDealCard &#123;	public static vo
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2020/06/05/Java常用类实战.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+        <h2 id="ArrayList类"><a href="#ArrayList类" class="headerlink" title="ArrayList类"></a>ArrayList类</h2><p>题：假设52张扑克牌（去掉大小王），实现随机洗牌操作，为参加游戏的人每人生成一手牌，每手牌的牌数是指定的，并将每个人分到的牌按花色排序后输出。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestDealCard</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> numHands=<span class="number">4</span>;</span><br><span class="line">		<span class="keyword">int</span> cardsPerHand=<span class="number">12</span>;</span><br><span class="line">		String[] suit= &#123;<span class="string">"♠"</span>,<span class="string">"♣"</span>,<span class="string">"♥"</span>,<span class="string">"♦"</span>&#125;;</span><br><span class="line">		String[] rank= &#123;<span class="string">"A"</span>,<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>,<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>,<span class="string">"7"</span>,<span class="string">"8"</span>,<span class="string">"9"</span>,<span class="string">"10"</span>,<span class="string">"J"</span>,<span class="string">"Q"</span>,<span class="string">"K"</span>&#125;;</span><br><span class="line">		List deck = <span class="keyword">new</span> ArrayList();</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;suit.length;i++) &#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;rank.length;j++) &#123;</span><br><span class="line">				deck.add(suit[i]+rank[j]);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		Collections.shuffle(deck);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;numHands-<span class="number">3</span>;i++) &#123;</span><br><span class="line">			List p=dealCard(deck, cardsPerHand);</span><br><span class="line">			Collections.sort(p);</span><br><span class="line">			System.out.println(deck);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> List <span class="title">dealCard</span><span class="params">(List deck, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> deckSize=deck.size();</span><br><span class="line">		List handView=deck.subList(deckSize-n, deckSize);</span><br><span class="line">		List hand=<span class="keyword">new</span> ArrayList(handView);</span><br><span class="line">		handView.clear();</span><br><span class="line">		<span class="keyword">return</span> hand;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="LinkList类"><a href="#LinkList类" class="headerlink" title="LinkList类"></a>LinkList类</h2><p>题：用LinkList写一个Stack的数据结构测试。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestStack</span> </span>&#123;</span><br><span class="line">	<span class="comment">//创建链表linkList</span></span><br><span class="line">	LinkedList linkList=<span class="keyword">new</span> LinkedList&lt;Object&gt;();</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">push</span><span class="params">(Object obj)</span> </span>&#123;</span><br><span class="line">		linkList.addLast(obj);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">clear</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		linkList.clear();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> linkList.isEmpty();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getSize</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> linkList.size();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Object <span class="title">pop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span>(!linkList.isEmpty())</span><br><span class="line">			<span class="keyword">return</span> linkList.removeLast();</span><br><span class="line">		<span class="keyword">return</span> <span class="string">"栈内无数"</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		TestStack myStack=<span class="keyword">new</span> TestStack();</span><br><span class="line">		myStack.push(<span class="number">3</span>);</span><br><span class="line">		myStack.push(<span class="number">4</span>);</span><br><span class="line">		myStack.push(<span class="number">5</span>);</span><br><span class="line">		System.out.println(myStack.pop());</span><br><span class="line">		System.out.println(myStack.pop());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Vector类"><a href="#Vector类" class="headerlink" title="Vector类"></a>Vector类</h2><p>题：写一个简单的Vector测试。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestVector</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Vector v=<span class="keyword">new</span> Vector(<span class="number">4</span>);</span><br><span class="line">		v.add(<span class="string">"J"</span>);</span><br><span class="line">		v.add(<span class="string">"A"</span>);</span><br><span class="line">		v.add(<span class="string">"J"</span>);</span><br><span class="line">		v.add(<span class="string">"E"</span>);</span><br><span class="line">		v.add(<span class="string">"L"</span>);</span><br><span class="line">		v.remove(<span class="string">"J"</span>);</span><br><span class="line">		v.remove(<span class="number">0</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">int</span> size=v.size();</span><br><span class="line">		System.out.println(<span class="string">"Size:"</span>+size);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;size;i++) &#123;</span><br><span class="line">			System.out.println(v.get(i));</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>题：演示一个简单的学生信息管理：利用向量记录实现学生管理，能支持学生对象的增加、删除操作，每个学生对象包括学号，性别，姓名。删除学生必须输入学生的学号。可以设计一个操作菜单，包括增加，删除，显示以及退出4项。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"><span class="keyword">import</span> java.io.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span>&#123;</span><br><span class="line">	String name;</span><br><span class="line">	<span class="keyword">long</span> stno;</span><br><span class="line">	String sex;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(String name,<span class="keyword">long</span> stno,String sex)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.name=name;</span><br><span class="line">		<span class="keyword">this</span>.stno=stno;</span><br><span class="line">		<span class="keyword">this</span>.sex=sex;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="string">"姓名:"</span>+name+<span class="string">",学号:"</span>+stno+<span class="string">",性别:"</span>+sex;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Vector&lt;Student&gt; group=<span class="keyword">new</span> Vector&lt;Student&gt;();</span><br><span class="line">		outer:</span><br><span class="line">		<span class="keyword">while</span>(<span class="keyword">true</span>) &#123;</span><br><span class="line">			String ch=input(<span class="string">"选择：1--增加，2--删除，3--显示，4--退出"</span>);</span><br><span class="line">			<span class="keyword">int</span> choice=Integer.parseInt(ch);</span><br><span class="line">			<span class="keyword">switch</span>(choice) &#123;</span><br><span class="line">				<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">					group.add(inputStudent());</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">					<span class="keyword">long</span> stno=Long.parseLong(input(<span class="string">"请输入学号:"</span>));</span><br><span class="line">					<span class="keyword">for</span>(<span class="keyword">int</span> k=<span class="number">0</span>;k&lt;group.size();k++) &#123;</span><br><span class="line">						Student x=(Student)group.get(k);</span><br><span class="line">						<span class="keyword">if</span>(x.stno==stno)</span><br><span class="line">							group.removeElement(x);</span><br><span class="line">					&#125;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				<span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">					<span class="comment">//迭代输出Vector存储</span></span><br><span class="line">					Iterator p=group.iterator();</span><br><span class="line">					<span class="keyword">while</span>(p.hasNext())&#123;</span><br><span class="line">						System.out.println(<span class="string">"==&gt;"</span>+p.next());</span><br><span class="line">					&#125;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				<span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">					<span class="keyword">break</span> outer;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">input</span><span class="params">(String hint)</span> </span>&#123;</span><br><span class="line">		String x=<span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="comment">//字符串输入</span></span><br><span class="line">			BufferedReader br=<span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> InputStreamReader(System.in));</span><br><span class="line">			System.out.println(hint);</span><br><span class="line">			x=br.readLine();</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">catch</span>(IOException e) &#123;&#125;</span><br><span class="line">		<span class="keyword">return</span> x;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Student <span class="title">inputStudent</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		String name=input(<span class="string">"请输入姓名:"</span>);</span><br><span class="line">		<span class="keyword">long</span> stno=Long.parseLong(input(<span class="string">"请输入学号:"</span>));</span><br><span class="line">		String sex=input(<span class="string">"请输入性别:"</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> Student(name,stno,sex);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Map类"><a href="#Map类" class="headerlink" title="Map类"></a>Map类</h2><p>题：写一个测试映射集合的代码。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestTreeMap</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Map map=<span class="keyword">new</span> HashMap();</span><br><span class="line">		map.put(<span class="string">"c"</span>,<span class="string">"ccc"</span>);</span><br><span class="line">		map.put(<span class="string">"a"</span>,<span class="string">"aaa"</span>);</span><br><span class="line">		map.put(<span class="string">"b"</span>,<span class="string">"bbb"</span>);</span><br><span class="line">		map.put(<span class="string">"d"</span>,<span class="string">"ddd"</span>);</span><br><span class="line">		Iterator iter=map.keySet().iterator();</span><br><span class="line">		<span class="keyword">while</span>(iter.hasNext()) &#123;</span><br><span class="line">			Object key=iter.next();</span><br><span class="line">			System.out.println(<span class="string">"tab key"</span>+key.toString()+<span class="string">"value="</span>+map.get(key));</span><br><span class="line">		&#125;</span><br><span class="line">		TreeMap tab=<span class="keyword">new</span> TreeMap();</span><br><span class="line">		tab.put(<span class="string">"c"</span>,<span class="string">"ccc"</span>);</span><br><span class="line">		tab.put(<span class="string">"a"</span>,<span class="string">"aaa"</span>);</span><br><span class="line">		tab.put(<span class="string">"b"</span>,<span class="string">"bbb"</span>);</span><br><span class="line">		tab.put(<span class="string">"d"</span>,<span class="string">"ddd"</span>);</span><br><span class="line">		Iterator iter2=tab.keySet().iterator();</span><br><span class="line">		<span class="keyword">while</span>(iter2.hasNext()) &#123;</span><br><span class="line">			Object key=iter2.next();</span><br><span class="line">			System.out.println(<span class="string">"map key"</span>+key.toString()+<span class="string">"value="</span>+tab.get(key));</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -600,428 +603,107 @@ import java.util.*;public class TestDealCard &#123;	public static vo
       
     
     
+      <div>
+        <div id="reward-container">
+  <div>Thank you for your accept. mua！</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
 
     
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/reward/wechatpay.png" alt="丨Xiye丨 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/reward/alipay.png" alt="丨Xiye丨 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>丨Xiye丨</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="https://blog.eatgrape.top/2020/06/05/Java常用类实战.html" title="Java常用类实战">https://blog.eatgrape.top/2020/06/05/Java常用类实战.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
     <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:16px;">-------------本文结束<i class="fa fa-heart"></i>感谢您的阅读-------------</div>
+    
+</div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.eatgrape.top/2020/06/05/TensorBoard实战.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="丨Xiye丨">
-      <meta itemprop="description" content="喜欢风、喜欢云、喜欢慵懒的午后和你">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xiyeの杂货铺">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2020/06/05/TensorBoard实战.html" class="post-title-link" itemprop="url">TensorBoard实战</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2020-06-05 18:49:12 / 修改时间：19:22:39" itemprop="dateCreated datePublished" datetime="2020-06-05T18:49:12+08:00">2020-06-05</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Keras/" itemprop="url" rel="index"><span itemprop="name">Keras</span></a></span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
           
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">2.4k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">2 分钟</span>
-              
-            </div>
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-            <p>
-              今天我们来介绍一款机器学习中很实用的工具：TensorBoard。它之所以实用，主要是因为它将机器学习这一个类似黑盒的东西可视化出来，让用户对训练过程有一个更好的理解。下面就基于MNIST数据集来实战一下TensorBoard的使用方法。
-
-TensorBoard可视化MNIST分类代码import
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2020/06/05/TensorBoard实战.html#more" rel="contents">
-                阅读全文 &raquo;
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/06/05/TensorBoard实战.html" rel="next" title="TensorBoard实战">
+                <i class="fa fa-chevron-left"></i> TensorBoard实战
               </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.eatgrape.top/2020/06/05/screen教程.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="丨Xiye丨">
-      <meta itemprop="description" content="喜欢风、喜欢云、喜欢慵懒的午后和你">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xiyeの杂货铺">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2020/06/05/screen教程.html" class="post-title-link" itemprop="url">screen教程</a>
-              
             
-          </h1>
-        
+          </div>
 
-        <div class="post-meta">
-          <span class="post-time">
+          <span class="post-nav-divider"></span>
 
+          <div class="post-nav-prev post-nav-item">
             
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2020-06-05 15:16:20 / 修改时间：15:34:32" itemprop="dateCreated datePublished" datetime="2020-06-05T15:16:20+08:00">2020-06-05</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">520</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">1 分钟</span>
-              
-            </div>
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>
-              ​    想必在Linux云服务器上跑过代码的同学都会有这样子的苦恼：我们通过SSH访问云服务器，将我们需要执行的代码在服务器上运行，但当你断开SSH连接后，你的代码也会随之停止运行。此时你可能开始寻找一种即使SSH离线也能让服务器运行目标代码的方法。这种方法确实存在，那就是下面提到的：screen
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2020/06/05/screen教程.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1031,230 +713,20 @@ TensorBoard可视化MNIST分类代码import
   </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.eatgrape.top/2020/05/29/conda操作.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="丨Xiye丨">
-      <meta itemprop="description" content="喜欢风、喜欢云、喜欢慵懒的午后和你">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xiyeの杂货铺">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2020/05/29/conda操作.html" class="post-title-link" itemprop="url">conda基本操作</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2020-05-29 11:41:44" itemprop="dateCreated datePublished" datetime="2020-05-29T11:41:44+08:00">2020-05-29</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2020-05-30 16:13:58" itemprop="dateModified" datetime="2020-05-30T16:13:58+08:00">2020-05-30</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python基础/" itemprop="url" rel="index"><span itemprop="name">python基础</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">1.8k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">2 分钟</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              conda可以说是每个学习python的人都应该了解的。当我们安装python包，或者创建环境的时候都会和它打交道。为了帮助大家对conda有一个更好的了解，下面总结了一些关于conda的命令行操作。主要是关于conda换源问题以及conda虚拟环境操作问题。那下面就开始吧！.0.0.
-
-windo
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2020/05/29/conda操作.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NDM5Mi8yMDkyNA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1274,8 +746,17 @@ windo
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1453,6 +934,23 @@ windo
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ArrayList类"><span class="nav-number">1.</span> <span class="nav-text">ArrayList类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LinkList类"><span class="nav-number">2.</span> <span class="nav-text">LinkList类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vector类"><span class="nav-number">3.</span> <span class="nav-text">Vector类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Map类"><span class="nav-number">4.</span> <span class="nav-text">Map类</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -1655,6 +1153,10 @@ windo
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
 
   
 
@@ -1671,33 +1173,31 @@ windo
   
 
   
-    
-      
-    
-  
 
   
   
   
-    <script src="/lib/quicklink/quicklink.umd.js"></script>
+
+
+  
+
+
+  
     <script>
-      
-        window.addEventListener('load', () => {
-      
-        quicklink({
-          timeout: 3000,
-          priority: true,
-          ignores: [uri => uri.includes('#'),uri => uri == 'https://blog.eatgrape.top/',]
-        });
-      
-        });
-      
-    </script>
-  
-
+  window.livereOptions = {
+    refer: '2020/06/05/Java常用类实战.html'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
 
   
-
 
 
   
@@ -2051,7 +1551,7 @@ windo
   <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
   <script>
   
-    bookmark.loadBookmark();
+    bookmark.scrollToMark('auto', "#更多");
   
   </script>
 
