@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[h]]></title>
-    <url>%2F2020%2F07%2F05%2Fh.html</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[LaTeX环境搭建]]></title>
     <url>%2F2020%2F07%2F02%2FLaTeX%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.html</url>
     <content type="text"><![CDATA[软件安装工欲善其事，必先利其器。所以第一步当然是安装软件啦！主要安装的东西分为2部分：一部分是LaTex的编译器，另一部分则是LaTex的IDE环境，下面就开始我们的入门之旅吧！ 1).TeXlive安装 TeXlive镜像文件下载地址 下载完成后，使用虚拟光驱运行如下文件 然后根据自己的需求安装需要的包： 为了验证是否安装成功，可以进入Windows的命令行敲入如下命令。 2).IDE的安装① TeXstudio下载地址 ② TeXworks editor下载地址]]></content>
