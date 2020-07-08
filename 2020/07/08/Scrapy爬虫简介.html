@@ -146,13 +146,13 @@
 
 
 
-  <meta name="description" content="Scrapy爬虫概述流程图： 1.Spiders(爬虫):它负责处理所有Responses,从中分析提取数据，获取Item字段需要的数据，并将需要跟进的URL提交给引擎，再次进入Scheduler(调度器) 2.Engine(引擎)：负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等。 3.Scheduler(调度器)：它负责接受引擎发">
+  <meta name="description" content="流程图： 1.Spiders(爬虫):它负责处理所有Responses,从中分析提取数据，获取Item字段需要的数据，并将需要跟进的URL提交给引擎，再次进入Scheduler(调度器) 2.Engine(引擎)：负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等。 3.Scheduler(调度器)：它负责接受引擎发送过来的Reques">
 <meta name="keywords" content="爬虫,python,Scrapy">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Scrapy爬虫简介">
 <meta property="og:url" content="https://blog.eatgrape.top/2020/07/08/Scrapy爬虫简介.html">
 <meta property="og:site_name" content="Xiyeの杂货铺">
-<meta property="og:description" content="Scrapy爬虫概述流程图： 1.Spiders(爬虫):它负责处理所有Responses,从中分析提取数据，获取Item字段需要的数据，并将需要跟进的URL提交给引擎，再次进入Scheduler(调度器) 2.Engine(引擎)：负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等。 3.Scheduler(调度器)：它负责接受引擎发">
+<meta property="og:description" content="流程图： 1.Spiders(爬虫):它负责处理所有Responses,从中分析提取数据，获取Item字段需要的数据，并将需要跟进的URL提交给引擎，再次进入Scheduler(调度器) 2.Engine(引擎)：负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等。 3.Scheduler(调度器)：它负责接受引擎发送过来的Reques">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_processing.png">
 <meta property="og:image" content="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_struct.png">
@@ -162,10 +162,10 @@
 <meta property="og:image" content="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_pipeline_1.png">
 <meta property="og:image" content="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_pipeline_2.png">
 <meta property="og:image" content="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_log.png">
-<meta property="og:updated_time" content="2020-07-08T07:40:08.589Z">
+<meta property="og:updated_time" content="2020-07-08T07:47:26.178Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Scrapy爬虫简介">
-<meta name="twitter:description" content="Scrapy爬虫概述流程图： 1.Spiders(爬虫):它负责处理所有Responses,从中分析提取数据，获取Item字段需要的数据，并将需要跟进的URL提交给引擎，再次进入Scheduler(调度器) 2.Engine(引擎)：负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等。 3.Scheduler(调度器)：它负责接受引擎发">
+<meta name="twitter:description" content="流程图： 1.Spiders(爬虫):它负责处理所有Responses,从中分析提取数据，获取Item字段需要的数据，并将需要跟进的URL提交给引擎，再次进入Scheduler(调度器) 2.Engine(引擎)：负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等。 3.Scheduler(调度器)：它负责接受引擎发送过来的Reques">
 <meta name="twitter:image" content="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_processing.png">
 
 
@@ -491,7 +491,7 @@
                 
               
 
-              <time title="创建时间：2020-07-08 15:39:07 / 修改时间：15:40:08" itemprop="dateCreated datePublished" datetime="2020-07-08T15:39:07+08:00">2020-07-08</time>
+              <time title="创建时间：2020-07-08 15:39:07 / 修改时间：15:47:26" itemprop="dateCreated datePublished" datetime="2020-07-08T15:39:07+08:00">2020-07-08</time>
             
 
             
@@ -549,7 +549,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">636</span>
+                <span title="本文字数">696</span>
               
 
               
@@ -583,7 +583,7 @@
       
 
       
-        <h1 id="Scrapy爬虫概述"><a href="#Scrapy爬虫概述" class="headerlink" title="Scrapy爬虫概述"></a>Scrapy爬虫概述</h1><h2 id="流程图："><a href="#流程图：" class="headerlink" title="流程图："></a>流程图：</h2><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_processing.png" alt="img"></p>
+        <h2 id="流程图："><a href="#流程图：" class="headerlink" title="流程图："></a>流程图：</h2><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_processing.png" alt="img"></p>
 <p>1.Spiders(爬虫):它负责处理所有Responses,从中分析提取数据，获取Item字段需要的数据，并将需要跟进的URL提交给引擎，再次进入Scheduler(调度器)</p>
 <p>2.Engine(引擎)：负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等。</p>
 <p>3.Scheduler(调度器)：它负责接受引擎发送过来的Request请求，并按照一定的方式进行整理排列，入队，当引擎需要时，交还给引擎。</p>
@@ -593,11 +593,17 @@
 <p>7.Spider Middlewares（Spider中间件）：你可以理解为是一个可以自定扩展和操作引擎和Spider中间通信的功能组件（比如进入Spider的Responses;和从Spider出去的Requests）</p>
 <p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_struct.png" alt></p>
 <h2 id="入门使用"><a href="#入门使用" class="headerlink" title="入门使用"></a>入门使用</h2><h3 id="创建过程："><a href="#创建过程：" class="headerlink" title="创建过程："></a>创建过程：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_way.png" alt></p>
+<hr>
 <h3 id="结构："><a href="#结构：" class="headerlink" title="结构："></a>结构：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapt_file.png" alt></p>
+<hr>
 <h3 id="spider使用："><a href="#spider使用：" class="headerlink" title="spider使用："></a>spider使用：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_spider.png" alt></p>
+<hr>
 <h3 id="pipeline更改和使用："><a href="#pipeline更改和使用：" class="headerlink" title="pipeline更改和使用："></a>pipeline更改和使用：</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_pipeline_1.png" alt></p>
 <p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_pipeline_2.png" alt></p>
+<hr>
 <h3 id="log简单设置"><a href="#log简单设置" class="headerlink" title="log简单设置"></a>log简单设置</h3><p><img src="https://github.com/Petr-Chan/tuchuang/raw/master/Scrapy_log.png" alt></p>
+<hr>
+<h3 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h3><p><a href="https://www.bilibili.com/video/BV1mf4y127S5#reply3147097466" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1mf4y127S5#reply3147097466</a></p>
 
       
     </div>
@@ -974,7 +980,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Scrapy爬虫概述"><span class="nav-number">1.</span> <span class="nav-text">Scrapy爬虫概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#流程图："><span class="nav-number">1.1.</span> <span class="nav-text">流程图：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#入门使用"><span class="nav-number">1.2.</span> <span class="nav-text">入门使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建过程："><span class="nav-number">1.2.1.</span> <span class="nav-text">创建过程：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结构："><span class="nav-number">1.2.2.</span> <span class="nav-text">结构：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#spider使用："><span class="nav-number">1.2.3.</span> <span class="nav-text">spider使用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pipeline更改和使用："><span class="nav-number">1.2.4.</span> <span class="nav-text">pipeline更改和使用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#log简单设置"><span class="nav-number">1.2.5.</span> <span class="nav-text">log简单设置</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#流程图："><span class="nav-number">1.</span> <span class="nav-text">流程图：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#入门使用"><span class="nav-number">2.</span> <span class="nav-text">入门使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建过程："><span class="nav-number">2.1.</span> <span class="nav-text">创建过程：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结构："><span class="nav-number">2.2.</span> <span class="nav-text">结构：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#spider使用："><span class="nav-number">2.3.</span> <span class="nav-text">spider使用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pipeline更改和使用："><span class="nav-number">2.4.</span> <span class="nav-text">pipeline更改和使用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#log简单设置"><span class="nav-number">2.5.</span> <span class="nav-text">log简单设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考文献："><span class="nav-number">2.6.</span> <span class="nav-text">参考文献：</span></a></li></ol></li></ol></div>
             
 
           </div>
