@@ -146,18 +146,18 @@
 
 
 
-  <meta name="description" content="今天我们来介绍一款机器学习中很实用的工具：TensorBoard。它之所以实用，主要是因为它将机器学习这一个类似黑盒的东西可视化出来，让用户对训练过程有一个更好的理解。下面就基于MNIST数据集来实战一下TensorBoard的使用方法。  TensorBoard可视化MNIST分类代码12345678910111213141516171819202122232425262728293031323">
-<meta name="keywords" content="Tensorboard">
+  <meta name="description" content="看完Scrapy的概述，我们大概对Scrapy这个爬虫框架有了一个大致的了解。下面就通过爬取当当网python书籍信息来对Scrapy这个框架做一个实战。  创建一个项目文件夹，并打开终端cd到创建文件夹处。在该目录下，在终端输入：1scrapy startproject (爬虫项目名)   &amp;emsp;  通过执行这条命令，便会在当前文件夹下创建Scrapy的大致模板了。   进入工程文件夹，在">
+<meta name="keywords" content="python,爬虫,实战">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TensorBoard实战">
-<meta property="og:url" content="https://blog.eatgrape.top/2020/06/05/TensorBoard实战.html">
+<meta property="og:title" content="Scrapy爬虫实战--当当网">
+<meta property="og:url" content="https://blog.eatgrape.top/2020/07/10/Scrapy爬虫实战-当当网.html">
 <meta property="og:site_name" content="Xiyeの杂货铺">
-<meta property="og:description" content="今天我们来介绍一款机器学习中很实用的工具：TensorBoard。它之所以实用，主要是因为它将机器学习这一个类似黑盒的东西可视化出来，让用户对训练过程有一个更好的理解。下面就基于MNIST数据集来实战一下TensorBoard的使用方法。  TensorBoard可视化MNIST分类代码12345678910111213141516171819202122232425262728293031323">
+<meta property="og:description" content="看完Scrapy的概述，我们大概对Scrapy这个爬虫框架有了一个大致的了解。下面就通过爬取当当网python书籍信息来对Scrapy这个框架做一个实战。  创建一个项目文件夹，并打开终端cd到创建文件夹处。在该目录下，在终端输入：1scrapy startproject (爬虫项目名)   &amp;emsp;  通过执行这条命令，便会在当前文件夹下创建Scrapy的大致模板了。   进入工程文件夹，在">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-06-05T11:22:39.771Z">
+<meta property="og:updated_time" content="2020-07-10T14:57:32.379Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TensorBoard实战">
-<meta name="twitter:description" content="今天我们来介绍一款机器学习中很实用的工具：TensorBoard。它之所以实用，主要是因为它将机器学习这一个类似黑盒的东西可视化出来，让用户对训练过程有一个更好的理解。下面就基于MNIST数据集来实战一下TensorBoard的使用方法。  TensorBoard可视化MNIST分类代码12345678910111213141516171819202122232425262728293031323">
+<meta name="twitter:title" content="Scrapy爬虫实战--当当网">
+<meta name="twitter:description" content="看完Scrapy的概述，我们大概对Scrapy这个爬虫框架有了一个大致的了解。下面就通过爬取当当网python书籍信息来对Scrapy这个框架做一个实战。  创建一个项目文件夹，并打开终端cd到创建文件夹处。在该目录下，在终端输入：1scrapy startproject (爬虫项目名)   &amp;emsp;  通过执行这条命令，便会在当前文件夹下创建Scrapy的大致模板了。   进入工程文件夹，在">
 
 
 
@@ -167,7 +167,7 @@
 
   
   
-  <link rel="canonical" href="https://blog.eatgrape.top/2020/06/05/TensorBoard实战">
+  <link rel="canonical" href="https://blog.eatgrape.top/2020/07/10/Scrapy爬虫实战-当当网">
 
 
 
@@ -177,7 +177,7 @@
   };
 </script>
 
-  <title>TensorBoard实战 | Xiyeの杂货铺</title>
+  <title>Scrapy爬虫实战--当当网 | Xiyeの杂货铺</title>
   
 
 
@@ -439,7 +439,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.eatgrape.top/2020/06/05/TensorBoard实战.html">
+    <link itemprop="mainEntityOfPage" href="https://blog.eatgrape.top/2020/07/10/Scrapy爬虫实战-当当网.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="丨Xiye丨">
@@ -456,7 +456,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">TensorBoard实战
+          <h1 class="post-title" itemprop="name headline">Scrapy爬虫实战--当当网
 
               
             
@@ -482,7 +482,7 @@
                 
               
 
-              <time title="创建时间：2020-06-05 18:49:12 / 修改时间：19:22:39" itemprop="dateCreated datePublished" datetime="2020-06-05T18:49:12+08:00">2020-06-05</time>
+              <time title="创建时间：2020-07-10 16:41:31 / 修改时间：22:57:32" itemprop="dateCreated datePublished" datetime="2020-07-10T16:41:31+08:00">2020-07-10</time>
             
 
             
@@ -504,7 +504,21 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Keras/" itemprop="url" rel="index"><span itemprop="name">Keras</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/爬虫/" itemprop="url" rel="index"><span itemprop="name">爬虫</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/爬虫/实战/" itemprop="url" rel="index"><span itemprop="name">实战</span></a></span>
 
                 
                 
@@ -540,7 +554,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.4k</span>
+                <span title="本文字数">7.4k</span>
               
 
               
@@ -554,7 +568,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">2 分钟</span>
+                <span title="阅读时长">7 分钟</span>
               
             </div>
           
@@ -574,30 +588,41 @@
       
 
       
-        <p>今天我们来介绍一款机器学习中很实用的工具：TensorBoard。它之所以实用，主要是因为它将机器学习这一个类似黑盒的东西可视化出来，让用户对训练过程有一个更好的理解。下面就基于MNIST数据集来实战一下TensorBoard的使用方法。</p>
-<hr>
-<h2 id="TensorBoard可视化MNIST分类代码"><a href="#TensorBoard可视化MNIST分类代码" class="headerlink" title="TensorBoard可视化MNIST分类代码"></a>TensorBoard可视化MNIST分类代码</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> keras.layers <span class="keyword">import</span> Input, Dense, Dropout, Activation, Conv2D, MaxPool2D, Flatten</span><br><span class="line"><span class="keyword">from</span> keras.datasets <span class="keyword">import</span> mnist</span><br><span class="line"><span class="keyword">from</span> keras.models <span class="keyword">import</span> Model</span><br><span class="line"><span class="keyword">from</span> keras.utils <span class="keyword">import</span> to_categorical</span><br><span class="line"><span class="keyword">from</span> keras.callbacks <span class="keyword">import</span> TensorBoard</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    <span class="comment">#数据集处理</span></span><br><span class="line">    data = np.load(<span class="string">'mnist.npz'</span>)</span><br><span class="line">    x_train, y_train = data[<span class="string">'x_train'</span>], data[<span class="string">'y_train'</span>]</span><br><span class="line">    x_test, y_test = data[<span class="string">'x_test'</span>], data[<span class="string">'y_test'</span>]</span><br><span class="line">    x_train = np.expand_dims(x_train, axis=<span class="number">-1</span>)</span><br><span class="line">    x_test = np.expand_dims(x_test, axis=<span class="number">-1</span>)</span><br><span class="line">    y_train=to_categorical(y_train, num_classes=<span class="number">10</span>)</span><br><span class="line">    y_test=to_categorical(y_test, num_classes=<span class="number">10</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="comment">#参数配置</span></span><br><span class="line">    batch_size =<span class="number">128</span></span><br><span class="line">    epoch = <span class="number">10</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 模型搭建</span></span><br><span class="line">    inputs = Input([<span class="number">28</span>, <span class="number">28</span>, <span class="number">1</span>])</span><br><span class="line">    x = Conv2D(<span class="number">32</span>, (<span class="number">5</span>, <span class="number">5</span>), activation=<span class="string">'relu'</span> )(inputs)</span><br><span class="line">    x = Conv2D(<span class="number">64</span>, (<span class="number">5</span>, <span class="number">5</span>), activation=<span class="string">'relu'</span>)(x)</span><br><span class="line">    x = MaxPool2D(pool_size=(<span class="number">2</span>, <span class="number">2</span>))(x)</span><br><span class="line">    x = Flatten()(x)</span><br><span class="line">    x = Dense(<span class="number">128</span>, activation=<span class="string">'relu'</span>)(x)</span><br><span class="line">    x = Dropout(<span class="number">0.5</span>)(x)</span><br><span class="line">    x = Dense(<span class="number">10</span>, activation=<span class="string">'softmax'</span>)(x)</span><br><span class="line">	</span><br><span class="line">    model = Model(inputs, x)</span><br><span class="line">	<span class="comment">#模型编译</span></span><br><span class="line">    model.compile(loss=<span class="string">'categorical_crossentropy'</span>, optimizer=<span class="string">'adam'</span>,metrics=[<span class="string">'acc'</span>])</span><br><span class="line">	<span class="comment">#面板配置</span></span><br><span class="line">    Tensorboard = TensorBoard(log_dir=<span class="string">'.\model'</span>, histogram_freq=<span class="number">1</span>, write_grads=<span class="literal">True</span>) <span class="comment">#log_dir保存目录</span></span><br><span class="line">	<span class="comment">#模型训练</span></span><br><span class="line">    result = model.fit(x_train, y_train, batch_size=batch_size, epochs=epoch, shuffle=<span class="literal">True</span>, validation_split=<span class="number">0.2</span>,callbacks=[Tensorboard]) <span class="comment">#在回调函数中加入TensorBoard！</span></span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="TensorBoard启动"><a href="#TensorBoard启动" class="headerlink" title="TensorBoard启动"></a>TensorBoard启动</h2><p>实际上，训练信息已经保存在TensorBoard配置的目录中了。下面进入当前*.py目录下的PowerShell，敲入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tensorboard --logdir= XXX（前文中的model）</span><br></pre></td></tr></table></figure>
-<p>PowerShell会反馈一个本地6006端口开放的提示信息。此时打开浏览器输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:6006</span><br></pre></td></tr></table></figure>
-<p>这样就成功进入TensorBoard界面啦！</p>
-<h2 id="TensorBoard配置"><a href="#TensorBoard配置" class="headerlink" title="TensorBoard配置"></a>TensorBoard配置</h2><p>我们上述实战例子中，我们只能够看到Loss和Acc的训练曲线，而其他信息是没有保存下来的。但世界上TensorBoard的可视化功能非常强大，目前可以支持一下7种可视化类别：</p>
+        <p>看完Scrapy的概述，我们大概对Scrapy这个爬虫框架有了一个大致的了解。下面就通过爬取当当网python书籍信息来对Scrapy这个框架做一个实战。</p>
 <ol>
-<li>SCALARS：展示训练过程中的准确率、损失值、权重/偏置的变化情况</li>
-<li>IMAGES：展示训练过程中及记录的图像</li>
-<li>AUDIO：展示训练过程中记录的音频</li>
-<li>GRAPHS：展示模型的数据流图，以及各个设备上消耗的内存和时间</li>
-<li>DISTRIBUTIONS：展示训练过程中记录的数据的分布图</li>
-<li>HISTOGRAMS：展示训练过程中记录的数据的柱状图</li>
-<li>EMBEDDINGS：展示词向量后的投影分布</li>
+<li>创建一个项目文件夹，并打开终端cd到创建文件夹处。在该目录下，在终端输入：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy startproject (爬虫项目名)</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<p>具体的参数配置后续再加~</p>
-<h2 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h2><ol>
-<li><a href="https://blog.csdn.net/fendouaini/article/details/80368770?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase" target="_blank" rel="noopener">https://blog.csdn.net/fendouaini/article/details/80368770?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase</a></li>
-<li><a href="https://blog.csdn.net/u010099080/article/details/77426577" target="_blank" rel="noopener">https://blog.csdn.net/u010099080/article/details/77426577</a></li>
-<li><a href="https://blog.csdn.net/hnwolfs/article/details/81122380?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-1" target="_blank" rel="noopener">https://blog.csdn.net/hnwolfs/article/details/81122380?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-1</a></li>
+<p>&emsp;  通过执行这条命令，便会在当前文件夹下创建Scrapy的大致模板了。</p>
+<hr>
+<ol start="2">
+<li>进入工程文件夹，在终端输入：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy genspider (爬虫py的名字) （爬取的范围）</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<ol start="3">
+<li>在items.py中添加item项。<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Define here the models for your scraped items</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># See documentation in:</span></span><br><span class="line"><span class="comment"># https://docs.scrapy.org/en/latest/topics/items.html</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#导入第三方库scrapy</span></span><br><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"></span><br><span class="line"><span class="comment">#定义有关需要爬取的数据的类DdpythonItem（当当pythonItem）</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DdpythonItem</span><span class="params">(scrapy.Item)</span>:</span></span><br><span class="line">    <span class="comment"># define the fields for your item here like:</span></span><br><span class="line">    <span class="comment"># name = scrapy.Field()</span></span><br><span class="line"></span><br><span class="line">    name=scrapy.Field()             <span class="comment">#书名</span></span><br><span class="line">    author=scrapy.Field()           <span class="comment">#作者</span></span><br><span class="line">    introduction=scrapy.Field()     <span class="comment">#简介</span></span><br><span class="line">    price=scrapy.Field()            <span class="comment">#价格</span></span><br><span class="line">    press=scrapy.Field()            <span class="comment">#出版社</span></span><br><span class="line">    time=scrapy.Field()             <span class="comment">#出版时间</span></span><br><span class="line">    comment_num=scrapy.Field()      <span class="comment">#评价数目</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<ol start="4">
+<li>进入前面生成的爬虫py文件中，进行爬取方法的定义。<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 导入第三方库scrapy以及自定义库items中的Item类DdpythonItem</span></span><br><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="keyword">from</span> ..items <span class="keyword">import</span> DdpythonItem</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义爬虫类DdSpider（当当Spider），爬虫名字命名为dd</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DdSpider</span><span class="params">(scrapy.Spider)</span>:</span></span><br><span class="line">    name = <span class="string">'dd'</span></span><br><span class="line">    <span class="comment"># 爬取的网站为当当网，开始的url为'http://search.dangdang.com/?key=python'（python类图书界面）</span></span><br><span class="line">    allowed_domains = [<span class="string">'dangdang.com'</span>]</span><br><span class="line">    start_urls = [<span class="string">'http://search.dangdang.com/?key=python'</span>]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 定义解析response对象的方法</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">parse</span><span class="params">(self, response)</span>:</span></span><br><span class="line">        <span class="comment"># 使用 XPath 从页面的HTML源码中选择需要提取的数据</span></span><br><span class="line">        <span class="comment"># 根据对HTML源码的观察，设置XPath解析规则提取出所有书籍信息books</span></span><br><span class="line">        books = response.xpath(<span class="string">'//ul[@class="bigimg"]/li'</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 对提取到的所有图书信息进行遍历，提取每一本书的相关信息</span></span><br><span class="line">        <span class="keyword">for</span> book <span class="keyword">in</span> books:</span><br><span class="line">            item = DdpythonItem()       <span class="comment"># 生成一个Item对象，用于存储提取到的信息</span></span><br><span class="line">            item[<span class="string">'name'</span>] = book.xpath(<span class="string">'./a[@class="pic"]/@title'</span>).extract()</span><br><span class="line">            item[<span class="string">'introduction'</span>] = book.xpath(<span class="string">'./p[@class="detail"]/text()'</span>).extract() <span class="keyword">if</span> len(book.xpath(<span class="string">'./p[@class="detail"]/text()'</span>)) &gt; <span class="number">0</span> <span class="keyword">else</span> <span class="string">'无介绍信息'</span></span><br><span class="line">            item[<span class="string">'author'</span>] = book.xpath(<span class="string">'./p/span[1]/a[1]/@title'</span>).extract() <span class="keyword">if</span> len(book.xpath(<span class="string">'./p/span[1]/a[1]/@title'</span>)) &gt; <span class="number">0</span> <span class="keyword">else</span> <span class="string">'无作者信息'</span></span><br><span class="line">            item[<span class="string">'price'</span>] = book.xpath(<span class="string">'./p/span[@class="search_now_price"]/text()'</span>).extract()</span><br><span class="line">            item[<span class="string">'press'</span>] = book.xpath(<span class="string">'./p/span[3]/a/text()'</span>).extract() <span class="keyword">if</span> len(book.xpath(<span class="string">'./p/span[3]/a/text()'</span>)) &gt; <span class="number">0</span> <span class="keyword">else</span> <span class="string">'无出版社信息'</span></span><br><span class="line">            item[<span class="string">'time'</span>] = book.xpath(<span class="string">'./p[5]/span[2]/text()'</span>).extract() <span class="keyword">if</span> len(book.xpath(<span class="string">'./p[5]/span[2]/text()'</span>)) &gt; <span class="number">0</span> <span class="keyword">else</span> <span class="string">'无出版时间信息'</span></span><br><span class="line">            item[<span class="string">'comment_num'</span>] = book.xpath(<span class="string">'./p[@class="search_star_line"]/a/text()'</span>).extract()</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 将提取到的数据提交给pipelines进行保存输出</span></span><br><span class="line">            <span class="keyword">yield</span> item</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 设置爬取的页面数pageNum，爬取10个页面的python图书信息</span></span><br><span class="line">        pageNum = <span class="number">10</span></span><br><span class="line">        <span class="comment"># 根据url的规则进行构建新的url，即page，将page提交给scrapy engine进行处理</span></span><br><span class="line">        <span class="keyword">for</span> page <span class="keyword">in</span> range(<span class="number">2</span>, pageNum):</span><br><span class="line">            page = <span class="string">'http://search.dangdang.com/?key=python&amp;page_index=&#123;&#125;'</span>.format(page)</span><br><span class="line"></span><br><span class="line">            <span class="comment"># 对页面page提交request请求，利用自定义的解析方法parse对获取到的页面进行解析</span></span><br><span class="line">            <span class="keyword">yield</span> scrapy.Request(page, callback=self.parse)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<ol start="5">
+<li>在pipelines.py文件中，将item中提取的数据保存下来。<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Define your item pipelines here</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># Don't forget to add your pipeline to the ITEM_PIPELINES setting</span></span><br><span class="line"><span class="comment"># See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 导入第三方库pymysql，用于对MySQL数据库进行处理</span></span><br><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义用于输出数据到MySQL数据库的Pipeline类DdpythonPipeline</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DdpythonPipeline</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="comment"># 定义处理item对象的方法process_item</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">process_item</span><span class="params">(self, item, spider)</span>:</span></span><br><span class="line">        <span class="comment"># 通过pymysql对本地数据库进行连接，并且指定连接的数据库为“dd”</span></span><br><span class="line">        db = pymysql.connect(host=<span class="string">"Localhost"</span>,user=<span class="string">"root"</span>,password=<span class="string">"cpt200406"</span>,db=<span class="string">"dd"</span>,charset=<span class="string">"utf8"</span>)</span><br><span class="line">        cursor = db.cursor()    <span class="comment"># 获取db的游标对象，用于对事务进行处理</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 根据提取的数据进行再次处理加工，转换成最终存储到数据库中的类型</span></span><br><span class="line">        name = item[<span class="string">"name"</span>][<span class="number">0</span>]</span><br><span class="line">        introduction=item[<span class="string">"introduction"</span>][<span class="number">0</span>]</span><br><span class="line">        author=item[<span class="string">"author"</span>][<span class="number">0</span>]</span><br><span class="line">        price = item[<span class="string">"price"</span>][<span class="number">0</span>].strip(<span class="string">'¥'</span>)     <span class="comment"># 删除价格前面的货币符￥</span></span><br><span class="line">        press = item[<span class="string">"press"</span>][<span class="number">0</span>]</span><br><span class="line">        time = item[<span class="string">"time"</span>][<span class="number">0</span>].strip().strip(<span class="string">'/'</span>)   <span class="comment"># 删除时间前面的‘/’</span></span><br><span class="line">        comment_num=item[<span class="string">"comment_num"</span>][<span class="number">0</span>].strip(<span class="string">'条评论'</span>)<span class="comment"># 删除原始数据中的汉字‘条评论’</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 对数据库进行插入操作，将提取到的item对象中的数据插入到dd数据库的ddpython数据表中</span></span><br><span class="line">        cursor.execute(<span class="string">'INSERT INTO ddpython(book_name,introduction,author,price,press,publication_time,comment_num) VALUES (%s,%s,%s,%s,%s,%s,%s)'</span>,(name,introduction,author,price,press,time,comment_num))</span><br><span class="line">        <span class="comment"># 对事务操作进行提交</span></span><br><span class="line">        db.commit()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 关闭游标对象cursor以及数据库对象db</span></span><br><span class="line">        cursor.close()</span><br><span class="line">        db.close()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 返回item对象</span></span><br><span class="line">        <span class="keyword">return</span> item</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<ol start="6">
+<li>在settings.py中,将pipelines的配置打开<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Scrapy settings for DDPython project</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># For simplicity, this file contains only settings considered important or</span></span><br><span class="line"><span class="comment"># commonly used. You can find more settings consulting the documentation:</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment">#     https://docs.scrapy.org/en/latest/topics/settings.html</span></span><br><span class="line"><span class="comment">#     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html</span></span><br><span class="line"><span class="comment">#     https://docs.scrapy.org/en/latest/topics/spider-middleware.html</span></span><br><span class="line"></span><br><span class="line">BOT_NAME = <span class="string">'DDPython'</span></span><br><span class="line"></span><br><span class="line">SPIDER_MODULES = [<span class="string">'DDPython.spiders'</span>]</span><br><span class="line">NEWSPIDER_MODULE = <span class="string">'DDPython.spiders'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Crawl responsibly by identifying yourself (and your website) on the user-agent</span></span><br><span class="line"><span class="comment">#USER_AGENT = 'DDPython (+http://www.yourdomain.com)'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Obey robots.txt rules</span></span><br><span class="line">ROBOTSTXT_OBEY = <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Configure maximum concurrent requests performed by Scrapy (default: 16)</span></span><br><span class="line"><span class="comment">#CONCURRENT_REQUESTS = 32</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Configure a delay for requests for the same website (default: 0)</span></span><br><span class="line"><span class="comment"># See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay</span></span><br><span class="line"><span class="comment"># See also autothrottle settings and docs</span></span><br><span class="line"><span class="comment">#DOWNLOAD_DELAY = 3</span></span><br><span class="line"><span class="comment"># The download delay setting will honor only one of:</span></span><br><span class="line"><span class="comment">#CONCURRENT_REQUESTS_PER_DOMAIN = 16</span></span><br><span class="line"><span class="comment">#CONCURRENT_REQUESTS_PER_IP = 16</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Disable cookies (enabled by default)</span></span><br><span class="line"><span class="comment">#COOKIES_ENABLED = False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Disable Telnet Console (enabled by default)</span></span><br><span class="line"><span class="comment">#TELNETCONSOLE_ENABLED = False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Override the default request headers:</span></span><br><span class="line"><span class="comment">#DEFAULT_REQUEST_HEADERS = &#123;</span></span><br><span class="line"><span class="comment">#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',</span></span><br><span class="line"><span class="comment">#   'Accept-Language': 'en',</span></span><br><span class="line"><span class="comment">#&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Enable or disable spider middlewares</span></span><br><span class="line"><span class="comment"># See https://docs.scrapy.org/en/latest/topics/spider-middleware.html</span></span><br><span class="line"><span class="comment">#SPIDER_MIDDLEWARES = &#123;</span></span><br><span class="line"><span class="comment">#    'DDPython.middlewares.DdpythonSpiderMiddleware': 543,</span></span><br><span class="line"><span class="comment">#&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Enable or disable downloader middlewares</span></span><br><span class="line"><span class="comment"># See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html</span></span><br><span class="line"><span class="comment">#DOWNLOADER_MIDDLEWARES = &#123;</span></span><br><span class="line"><span class="comment">#    'DDPython.middlewares.DdpythonDownloaderMiddleware': 543,</span></span><br><span class="line"><span class="comment">#&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Enable or disable extensions</span></span><br><span class="line"><span class="comment"># See https://docs.scrapy.org/en/latest/topics/extensions.html</span></span><br><span class="line"><span class="comment">#EXTENSIONS = &#123;</span></span><br><span class="line"><span class="comment">#    'scrapy.extensions.telnet.TelnetConsole': None,</span></span><br><span class="line"><span class="comment">#&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Configure item pipelines</span></span><br><span class="line"><span class="comment"># See https://docs.scrapy.org/en/latest/topics/item-pipeline.html</span></span><br><span class="line">ITEM_PIPELINES = &#123;</span><br><span class="line">   <span class="string">'DDPython.pipelines.DdpythonPipeline'</span>: <span class="number">300</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Enable and configure the AutoThrottle extension (disabled by default)</span></span><br><span class="line"><span class="comment"># See https://docs.scrapy.org/en/latest/topics/autothrottle.html</span></span><br><span class="line"><span class="comment">#AUTOTHROTTLE_ENABLED = True</span></span><br><span class="line"><span class="comment"># The initial download delay</span></span><br><span class="line"><span class="comment">#AUTOTHROTTLE_START_DELAY = 5</span></span><br><span class="line"><span class="comment"># The maximum download delay to be set in case of high latencies</span></span><br><span class="line"><span class="comment">#AUTOTHROTTLE_MAX_DELAY = 60</span></span><br><span class="line"><span class="comment"># The average number of requests Scrapy should be sending in parallel to</span></span><br><span class="line"><span class="comment"># each remote server</span></span><br><span class="line"><span class="comment">#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0</span></span><br><span class="line"><span class="comment"># Enable showing throttling stats for every response received:</span></span><br><span class="line"><span class="comment">#AUTOTHROTTLE_DEBUG = False</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Enable and configure HTTP caching (disabled by default)</span></span><br><span class="line"><span class="comment"># See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings</span></span><br><span class="line"><span class="comment">#HTTPCACHE_ENABLED = True</span></span><br><span class="line"><span class="comment">#HTTPCACHE_EXPIRATION_SECS = 0</span></span><br><span class="line"><span class="comment">#HTTPCACHE_DIR = 'httpcache'</span></span><br><span class="line"><span class="comment">#HTTPCACHE_IGNORE_HTTP_CODES = []</span></span><br><span class="line"><span class="comment">#HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<ol start="7">
+<li>进入工作目录文件夹，输入以下命令启动爬虫：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scrapy crawl (爬虫名)</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 
       
@@ -666,7 +691,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://blog.eatgrape.top/2020/06/05/TensorBoard实战.html" title="TensorBoard实战">https://blog.eatgrape.top/2020/06/05/TensorBoard实战.html</a>
+    <a href="https://blog.eatgrape.top/2020/07/10/Scrapy爬虫实战-当当网.html" title="Scrapy爬虫实战--当当网">https://blog.eatgrape.top/2020/07/10/Scrapy爬虫实战-当当网.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -688,7 +713,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Tensorboard/" rel="tag"><i class="fa fa-tag"></i> Tensorboard</a>
+            <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
+          
+            <a href="/tags/爬虫/" rel="tag"><i class="fa fa-tag"></i> 爬虫</a>
+          
+            <a href="/tags/实战/" rel="tag"><i class="fa fa-tag"></i> 实战</a>
           
         </div>
       
@@ -701,8 +730,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/06/05/screen教程.html" rel="next" title="screen常用命令">
-                <i class="fa fa-chevron-left"></i> screen常用命令
+              <a href="/2020/07/08/Scrapy爬虫简介.html" rel="next" title="Scrapy爬虫简介">
+                <i class="fa fa-chevron-left"></i> Scrapy爬虫简介
               </a>
             
           </div>
@@ -710,10 +739,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/06/05/Java常用类实战.html" rel="prev" title="Java常用类实战">
-                Java常用类实战 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -762,17 +787,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -972,23 +988,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#TensorBoard可视化MNIST分类代码"><span class="nav-number">1.</span> <span class="nav-text">TensorBoard可视化MNIST分类代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TensorBoard启动"><span class="nav-number">2.</span> <span class="nav-text">TensorBoard启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TensorBoard配置"><span class="nav-number">3.</span> <span class="nav-text">TensorBoard配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献："><span class="nav-number">4.</span> <span class="nav-text">参考文献：</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
@@ -1223,7 +1222,7 @@
   
     <script>
   window.livereOptions = {
-    refer: '2020/06/05/TensorBoard实战.html'
+    refer: '2020/07/10/Scrapy爬虫实战-当当网.html'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
