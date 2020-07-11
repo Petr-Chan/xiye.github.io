@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.eatgrape.top/"/>
-  <updated>2020-07-10T14:57:32.379Z</updated>
+  <updated>2020-07-11T02:16:52.664Z</updated>
   <id>https://blog.eatgrape.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VSCode优雅配置LaTeX</title>
+    <link href="https://blog.eatgrape.top/2020/07/11/VSCode%E4%BC%98%E9%9B%85%E9%85%8D%E7%BD%AELaTeX.html"/>
+    <id>https://blog.eatgrape.top/2020/07/11/VSCode优雅配置LaTeX.html</id>
+    <published>2020-07-11T01:14:11.000Z</published>
+    <updated>2020-07-11T02:16:52.664Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="LaTeX" scheme="https://blog.eatgrape.top/categories/LaTeX/"/>
+    
+      <category term="VSCode" scheme="https://blog.eatgrape.top/categories/LaTeX/VSCode/"/>
+    
+    
+      <category term="LaTex" scheme="https://blog.eatgrape.top/tags/LaTex/"/>
+    
+      <category term="VSCode" scheme="https://blog.eatgrape.top/tags/VSCode/"/>
+    
+  </entry>
   
   <entry>
     <title>Scrapy爬虫实战--当当网</title>
